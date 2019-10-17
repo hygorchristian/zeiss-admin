@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518e0edd-a47e-4ec9-ae1c-2805166f27fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Montserrat Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Bold Condensed.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Heavy Condensed.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Heavy.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Light Condensed.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Light Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Medium Condensed.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Regular Condensed.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/ZEISS Frutiger Next W1G Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Zeiss Frutiger Next Pro Light Condensed.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Zeiss Frutiger Next Pro Medium Condensed.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Zeiss Frutiger Next Pro Medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/ReactotronConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/ducks/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/ducks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/sagas/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/sagas/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571259159215</updated>
-      <workItem from="1571259160643" duration="13801000" />
+      <workItem from="1571259160643" duration="19279000" />
     </task>
     <servers />
   </component>
