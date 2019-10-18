@@ -12,13 +12,13 @@ function Item({ route, aberto }) {
 
   return (
     <MenuItem to={route.path}>
-      <Icon color={aberto ? '#ffffff' : '#000000'} />
+      <Icon size={22} color={aberto ? '#ffffff' : '#000000'} />
       {aberto && <span>{route.label}</span>}
     </MenuItem>
   );
 }
 
-function Dashboard() {
+function Dashboard({ children }) {
   const [aberto, setAberto] = useState(true);
 
   const fechar = () => {
@@ -31,7 +31,7 @@ function Dashboard() {
   return (
     <Container aberto={aberto}>
       <Menu aberto={aberto}>
-        <MenuController>
+        <MenuController aberto={aberto}>
           <img src="/icons/logo.svg" alt="Logo" />
           {aberto && (
             <span onClick={fechar}>
@@ -53,11 +53,7 @@ function Dashboard() {
           </span>
         </Header>
         <Content>
-          <Switch>
-            {
-              routes.map((route) => <Route component={route.component} path={route.path} exact />)
-            }
-          </Switch>
+          {children}
         </Content>
       </Main>
     </Container>

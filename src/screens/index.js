@@ -7,13 +7,13 @@ export default [
   {
     label: 'Clientes',
     icon: FiUsers,
-    path: 'clientes',
+    path: '/clientes',
     component: Clientes,
   },
   {
     label: 'Reclamações',
     icon: FiUser,
-    path: 'reclamacoes',
+    path: '/reclamacoes',
     component: Reclamacoes,
   },
 ];

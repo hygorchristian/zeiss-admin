@@ -12,8 +12,11 @@ export const Container = styled.div`
 `;
 
 export const Menu = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: ${({ aberto }) => (aberto ? 'flex-start' : 'center')};
   width: ${({ aberto }) => (aberto ? '300px' : '110px')};
-  padding-left: 35px;
+  padding-left: ${({ aberto }) => (aberto ? '35px' : '0')};
   padding-top: 35px;
   transition: all 350ms ease-in-out;
   
@@ -30,7 +33,7 @@ export const MenuController = styled.div`
   flex-direction: row;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: ${({ aberto }) => (aberto ? 'space-between' : 'center')};
   
   span{
     display: flex;
