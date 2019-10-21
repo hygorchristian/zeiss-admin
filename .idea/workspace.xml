@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518e0edd-a47e-4ec9-ae1c-2805166f27fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/ReactotronConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/ReactotronConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Clientes/Clientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Clientes/Clientes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Reclamacoes/Reclamacoes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Reclamacoes/Reclamacoes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571259159215</updated>
-      <workItem from="1571259160643" duration="28966000" />
+      <workItem from="1571259160643" duration="34863000" />
     </task>
     <servers />
   </component>

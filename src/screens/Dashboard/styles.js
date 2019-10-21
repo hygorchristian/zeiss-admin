@@ -77,7 +77,7 @@ export const Header = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-right: 45px
  
   h3{
@@ -135,4 +135,42 @@ export const MenuItem = styled(Link)`
   }
   
  
+`;
+
+export const Left = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+`;
+
+export const Right = styled.div`  
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  padding-left: 54px;
+  color: #008BD0;
+  
+  
+  div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    
+    &:active{
+      opacity: .5;
+    }
+    
+    
+    h3{
+      font-weight: 500;
+      margin-top: 3px;
+      margin-left: 10px;
+    }   
+  }
 `;

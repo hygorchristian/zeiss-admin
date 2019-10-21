@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+
 import { FiChevronDown, FiChevronLeft, FiMenu } from 'react-icons/fi';
 import routes from '..';
 
 import {
- Container, Content, Header, Main, Menu, MenuController, Open, MenuItem
+ Container, Content, Header, Main, Menu, MenuController, Open, MenuItem, Left, Right
 } from './styles';
 
 function Item({ route, aberto }) {
@@ -18,8 +20,9 @@ function Item({ route, aberto }) {
   );
 }
 
-function Dashboard({ children }) {
+function Dashboard({ children, history }) {
   const [aberto, setAberto] = useState(true);
+  const { back, notifications } = useSelector((state) => state.Header);
 
   const fechar = () => {
     setAberto(false);
@@ -46,11 +49,24 @@ function Dashboard({ children }) {
       </Menu>
       <Main aberto={aberto}>
         <Header>
-          <h3>Olá, Carl</h3>
-          <img alt="Avatar" src="https://i.pinimg.com/236x/97/7a/e2/977ae2f909bb8f3389b3065287452b32.jpg" />
-          <span>
-            <FiChevronDown />
-          </span>
+          <Right>
+            {
+              back && (
+                <div onClick={() => history.push(back.route)}>
+                  <FiChevronLeft size={20} />
+                  <h3>{back.label}</h3>
+                </div>
+              )
+            }
+
+          </Right>
+          <Left>
+            <h3>Olá, Carl</h3>
+            <img alt="Avatar" src="https://i.pinimg.com/236x/97/7a/e2/977ae2f909bb8f3389b3065287452b32.jpg" />
+            <span>
+              <FiChevronDown />
+            </span>
+          </Left>
         </Header>
         <Content>
           {children}
@@ -60,4 +76,4 @@ function Dashboard({ children }) {
 );
 }
 
-export default Dashboard;
+export default withRouter(Dashboard);

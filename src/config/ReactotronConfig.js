@@ -10,6 +10,6 @@ if (process.env.NODE_ENV === 'development') {
 
   console.tron = tron;
   tron.clear();
-}else{
+} else {
   console.tron = console;
 }

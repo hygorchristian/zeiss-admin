@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FiPhone, FiChevronDown } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import Search from '../../components/Search';
 
 import {
  Container, Header, Separator, Info, Content, Nome, ContatoContainer, StatusContainer
 } from './styles';
+import { HeaderActions } from '../../store/ducks/header';
 
 const itens = [
   {
@@ -93,7 +96,17 @@ function Contato({ contato }) {
   );
 }
 
-function Clientes() {
+function Clientes({ history }) {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(HeaderActions.headerSetBack(null));
+  }, []);
+
+  const navigate = (id) => {
+    history.push(`/clientes/${id}`);
+  };
+
   return (
     <Container>
       <Header>
@@ -122,7 +135,7 @@ function Clientes() {
           <tbody>
             {
             itens.map((item) => (
-              <tr key={item.id}>
+              <tr key={item.id} onClick={() => navigate(item.id)}>
                 <td>
                   <Titulo titulo={item.nome} codigo={item.codigo} />
                 </td>
