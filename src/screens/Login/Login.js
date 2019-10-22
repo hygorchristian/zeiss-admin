@@ -22,7 +22,6 @@ function Login() {
     setEtapa(2);
   };
   const login = () => {
-    console.tron.log('clicou');
     dispatch(AuthActions.authLoadSuccess('token'));
   };
 

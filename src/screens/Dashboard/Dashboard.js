@@ -1,34 +1,53 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import 'animate.css/animate.css';
+import Animate from 'animate.css-react';
 
-import { FiChevronDown, FiChevronLeft, FiMenu } from 'react-icons/fi';
+import {
+ FiChevronDown, FiChevronLeft, FiMenu, FiBell
+} from 'react-icons/fi';
 import routes from '..';
 
 import {
- Container, Content, Header, Main, Menu, MenuController, Open, MenuItem, Left, Right
+ Container, Content, Header, Main, Menu, MenuController, Open, MenuItem, Left, Right, ProfileMenu, Notification, NotificationMenu
 } from './styles';
+import { MenuActions } from '../../store/ducks/menu';
 
-function Item({ route, aberto }) {
+function Item({ route, aberto, selected }) {
   const Icon = route.icon;
 
+  let color = '';
+
+  if (aberto) {
+    color = '#ffffff';
+  } else if (`/${selected}` === route.path) {
+    color = '#008BD0';
+  } else {
+    color = '#000000';
+  }
+
   return (
-    <MenuItem to={route.path}>
-      <Icon size={22} color={aberto ? '#ffffff' : '#000000'} />
+    <MenuItem to={route.path} selected={`/${selected}` === route.path}>
+      <Icon size={22} color={color} />
       {aberto && <span>{route.label}</span>}
     </MenuItem>
   );
 }
 
-function Dashboard({ children, history }) {
-  const [aberto, setAberto] = useState(true);
+function Dashboard({ children, history, match: { path } }) {
+  const dispatch = useDispatch();
+  const [profileOpen, setProfileOpen] = useState(false);
   const { back, notifications } = useSelector((state) => state.Header);
+  const aberto = useSelector((state) => state.Menu.opened);
+
+  const selected = path.split('/')[1];
 
   const fechar = () => {
-    setAberto(false);
+    dispatch(MenuActions.menuSetOpen(false));
   };
   const abrir = () => {
-    setAberto(true);
+    dispatch(MenuActions.menuSetOpen(true));
   };
 
   return (
@@ -45,11 +64,11 @@ function Dashboard({ children, history }) {
         <Open onClick={abrir}>
           {!aberto && <FiMenu size={20} color={aberto ? '#ffffff' : '#000000'} />}
         </Open>
-        { routes.map((route) => <Item aberto={aberto} route={route} />) }
+        { routes.map((route) => <Item aberto={aberto} route={route} selected={selected} />) }
       </Menu>
       <Main aberto={aberto}>
         <Header>
-          <Right>
+          <Left>
             {
               back && (
                 <div onClick={() => history.push(back.route)}>
@@ -59,14 +78,39 @@ function Dashboard({ children, history }) {
               )
             }
 
-          </Right>
-          <Left>
+          </Left>
+          <Right>
+            <Notification>
+              <FiBell size={20} />
+              {
+                notifications && (
+                  <div className="badge">
+                    <span>{notifications.count}</span>
+                  </div>
+                )
+              }
+            </Notification>
             <h3>Olá, Carl</h3>
             <img alt="Avatar" src="https://i.pinimg.com/236x/97/7a/e2/977ae2f909bb8f3389b3065287452b32.jpg" />
-            <span>
+            <span onClick={() => setProfileOpen(!profileOpen)}>
               <FiChevronDown />
             </span>
-          </Left>
+            {profileOpen && (
+            <Animate appear="flipInY" durationAppear={1000} leave="flipOutY" durationLeave={1000}>
+              <ProfileMenu>
+                <div className="item-menu">
+                  <span>Editar Perfil</span>
+                </div>
+                <div className="item-menu">
+                  <span>Minha Conta</span>
+                </div>
+                <div className="logout">
+                  <span>Logout</span>
+                </div>
+              </ProfileMenu>
+            </Animate>
+            )}
+          </Right>
         </Header>
         <Content>
           {children}

@@ -1,17 +1,29 @@
 import React, { useEffect } from 'react';
-
 import { useDispatch } from 'react-redux';
-import { Container } from './styles';
 import { HeaderActions } from '../../store/ducks/header';
 
-function Reclamacoes() {
+import {
+  Container, Header,
+} from './styles';
+
+function Reclamacoes({ history }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(HeaderActions.headerSetBack(null));
   }, []);
 
-  return <Container />;
+  const navigate = (id) => {
+    history.push(`/clientes/${id}`);
+  };
+
+  return (
+    <Container>
+      <Header>
+        <h1>Reclamações</h1>
+      </Header>
+    </Container>
+  );
 }
 
 export default Reclamacoes;

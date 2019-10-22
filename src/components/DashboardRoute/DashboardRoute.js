@@ -3,8 +3,6 @@ import Dashboard from '../../screens/Dashboard';
 import PrivateRoute from '../PrivateRoute';
 
 function DashboardRoute({ component: Component, ...rest }) {
-  console.tron.log('passou pelo dashboard-route', rest);
-
   return (
     <PrivateRoute
       {...rest}

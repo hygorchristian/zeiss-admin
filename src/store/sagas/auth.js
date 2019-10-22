@@ -2,8 +2,6 @@ import { call, put, delay } from 'redux-saga/effects';
 import { AuthActions } from '../ducks/auth';
 
 export function* loadAuth() {
-  console.tron.log('passando no middleware');
-
   try {
     yield delay(2000);
     yield put(AuthActions.authLoadSuccess('token: ksakskkas'));

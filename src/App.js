@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { SnackbarProvider } from 'notistack';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from './store';
 
+import { store, persistor } from './store';
 import Routes from './routes';
 import Global from './styles/global';
 

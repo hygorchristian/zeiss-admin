@@ -13,12 +13,9 @@ const routes = () => (
     <PrivateRoute path="/" exact component={Dashboard} />
     <Route path="/login" exact component={Login} />
     <DashboardRoute path="/clientes/:id" exact component={Cliente} />
-    {dashboardRoutes.map((route) => {
-      console.tron.log(route);
-      return (
-        <DashboardRoute exact path={route.path} component={route.component} />
-      );
-    })}
+    {dashboardRoutes.map((route) => (
+      <DashboardRoute exact path={route.path} component={route.component} />
+      ))}
   </Switch>
 );
 

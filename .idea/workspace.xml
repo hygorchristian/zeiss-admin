@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518e0edd-a47e-4ec9-ae1c-2805166f27fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/ducks/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/ReactotronConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/ReactotronConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DashboardRoute/DashboardRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashboardRoute/DashboardRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Clientes/Clientes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Clientes/Clientes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Login/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Reclamacoes/Reclamacoes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Reclamacoes/Reclamacoes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Reclamacoes/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Reclamacoes/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/ducks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/sagas/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/sagas/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/ducks" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,11 +57,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/store/ducks" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/assets/img" />
-      <recent name="$PROJECT_DIR$/src/config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571259159215</updated>
-      <workItem from="1571259160643" duration="34863000" />
+      <workItem from="1571259160643" duration="54451000" />
+      <workItem from="1571737555114" duration="6420000" />
     </task>
     <servers />
   </component>
@@ -92,7 +99,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
